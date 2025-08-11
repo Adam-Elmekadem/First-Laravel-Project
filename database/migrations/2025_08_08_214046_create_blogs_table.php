@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('body');
+            $table->longText('body');
             $table->text('description');
             $table->string('topic');
             $table->string('color')->default('cyan');
