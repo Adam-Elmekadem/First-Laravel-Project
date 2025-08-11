@@ -41,13 +41,12 @@
     <h2 class="text-2xl font-bold {{ $c['heading'] }} mb-2">{{ $title }}</h2>
     <p class="text-gray-300 mb-4">{{ $description }}</p>
     <div class="flex justify-between">
-        <a href="#" class="{{ $c['link'] }} font-semibold inline-flex items-center">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+        <a href="{{ route('blogs.show', $id) }}" class="{{ $c['link'] }} font-semibold inline-flex items-center">Read More <i class="fas fa-arrow-right ml-2"></i></a>
         <div>
             <a href="{{ route('blogs.edit', $id) }}" class="text-blue-500 bg-blue-950 px-4 py-1 rounded-lg hover:text-blue-400 ml-2">Edit</a>
-            
             <form action="{{ route('blogs.destroy', $id) }}" method="POST" class="inline-flex">
                 @csrf
-                @method('DELETE') {{-- add a delete methode to the form --}}
+                @method('DELETE')
                 <button type="submit" class="text-red-500 bg-red-950 px-4 py-1 rounded-lg hover:text-red-400">Delete</button>
             </form>
         </div>

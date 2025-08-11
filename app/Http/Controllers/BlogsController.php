@@ -63,9 +63,9 @@ class BlogsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(blogs $blogs)
+    public function show(blogs $blog)
     {
-        return view('blogs.show', compact('blogs'));
+        return view('blogs.show', compact('blog'));
     }
 
     /**

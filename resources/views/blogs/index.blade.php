@@ -30,9 +30,10 @@
         @endforelse
     </div>
     <div class="mt-12 text-center">
-        <a href="#" class="inline-block bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-500/25 animate-fade-in-up">
+        <a href="{{ route('blogs.index') }}" class="inline-block bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-500/25 animate-fade-in-up">
             View All Articles
         </a>
     </div>
 </div>
+
 @endsection

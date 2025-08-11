@@ -21,6 +21,10 @@
             <input type="text" name="topic" id="topic" value="{{ old('topic', $blog->topic) }}" class=" p-2 mt-1 block w-full border border-gray-600 bg-gray-800 text-gray-300 rounded-lg shadow-sm focus:border-cyan-500 focus:ring focus:ring-cyan-500 focus:ring-opacity-50" required>
         </div>
         <div class="mb-4">
+            <label for="body" class="block text-sm font-medium text-gray-300">Body</label>
+            <textarea name="body" id="body" rows="6" class="p-2 mt-1 block w-full border border-gray-600 bg-gray-800 text-gray-300 rounded-lg shadow-sm focus:border-cyan-500 focus:ring focus:ring-cyan-500 focus:ring-opacity-50" required>{{ old('body', $blog->body) }}</textarea>
+        </div>
+        <div class="mb-4">
             <label for="color" class="block text-sm font-medium text-gray-300">Color</label>
             <select name="color" id="color" class="p-2 mt-1 block w-full border border-gray-600 bg-gray-800 text-gray-300 rounded-lg shadow-sm focus:border-cyan-500 focus:ring focus:ring-cyan-500 focus:ring-opacity-50">
                 <option value="cyan" {{ $blog->color === 'cyan' ? 'selected' : '' }}>Cyan</option>
